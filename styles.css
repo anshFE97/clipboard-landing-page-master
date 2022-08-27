@@ -1,0 +1,340 @@
+:root {
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;                                      
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+.container picture img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.container div {
+    padding: 1rem 1.2rem;
+}
+
+.container .first {
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 8rem;
+}
+
+.container.first img {
+    display: block;
+    margin: auto;
+    
+}
+
+.container div h2 {
+
+    color: var(--Dark-Grayish-Blue);
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-family: "Bai Jamjuree", sans-serif;
+    text-align: center;
+}
+
+.container div p {
+    color: var(--Grayish-Blue);
+    font-family: inherit;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container div a button {
+    padding: 1rem 5rem;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    border: none;
+    
+}
+
+.container div a .ios {
+    background-color: var(--Strong-Cyan);
+    border-bottom: 3px solid hsl(171, 71%, 29%);
+    margin-bottom: 20px;
+}
+
+.container div a .mac {
+    background-color: var(--Light-Blue);
+    border-bottom: 3px solid hsl(233, 72%, 59%);
+}
+
+.container div h3 {
+    color: var(--Dark-Grayish-Blue);
+    padding: 1 rem 2rem;
+    font-weight: 600;
+    font-family: "Bai Jamjuree", sans-serif;
+    text-align: center;
+}
+
+.container .third {
+    padding-bottom: 8rem;
+}
+
+.container .fifth section img {
+    display: block;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.container .sixth ul {
+    list-style: none;
+    text-align: center;
+}
+
+.container .sixth ul li img {
+    width: 8rem;
+    padding: 1.5rem;
+}
+
+.container .seventh  {
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+.container .eighth {
+    text-align: center;
+    background-color: hsla(201, 11%, 66%, 20%);
+
+}
+
+.container .eighth .logobtm {
+    width: 4rem;
+    padding-top: 3rem;
+}
+
+.container .eighth ul {
+    list-style: none;
+    padding-right: 2rem;
+}
+
+.container .eighth .topline li {
+    padding: 1rem 0;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.container .eighth .bottomline li {
+    display: inline;
+    padding-inline: 1rem;
+}
+
+.container .eighth .bottomline a {
+    color: var(--Dark-Grayish-Blue);
+}
+
+.container .eighth .footerthree li a {
+    font-size: 1.8rem;
+}
+
+
+.container div a .ios:hover {
+    cursor: pointer;
+    background-color: hsl(171, 66%, 57%);
+    transition: 0.3ms;
+}
+
+.container div a .mac:hover {
+    cursor: pointer;
+    background-color: hsl(233, 92%, 75%);
+    transform: 0.3ms;
+}
+
+.container .eighth .footertwo .topline a {
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.container .eighth .footertwo .topline a:hover {
+    cursor: pointer;
+    color: hsl(171, 66%, 57%);
+    transition: 0.3ms;
+}
+
+.container .eighth .footerthree .bottomline a:hover {
+    color: hsl(171, 66%, 57%);
+    transition: 0.3ms;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width:600px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        max-width: calc(100% - 2rem);
+    }
+    
+    .container div h2 {
+        font-size: 2rem;
+        margin-inline: 24rem;
+    }
+
+    .container .first h2 {
+        padding-top: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .container div p {
+        margin-inline: 26rem;
+        line-height: 1.8rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding-bottom: 1rem;
+    }
+
+    .container div a {
+        padding-inline: 1rem;
+        
+    }
+
+    .container .second p {
+        font-size: 1rem;
+    }
+
+    .container .third {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-inline: 0;
+        padding-top: 2rem;
+    }
+
+
+    .container .third section {
+        overflow: hidden;
+    }
+
+    .container .third section .trim {
+        display: block;
+        width: 105%;
+        height: auto;
+        transform: translateX(-5%);
+    }
+
+
+    .container .third .cards  h3{
+        text-align: left;
+        margin:0 20rem 0 4rem;
+        font-size: 1.5rem;
+        padding-top: 3rem;
+    }
+
+    .container .third .cards p {
+        text-align: left;
+        margin: 0 20rem 0 4rem;
+        font-size: 1rem;
+    }
+
+    .container .fourth {
+        text-align: center;
+    }
+
+    .container .extra p {
+        font-size: 1rem;
+    }
+
+    .container .fifth .lineig {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 0;
+    }
+
+
+    .container .fifth .lineig section h3 {
+        margin-inline: 3rem;
+    }
+
+    .container .fifth .lineig section p {
+        margin: 0 1rem;;
+        width: 21rem;
+
+    
+    }
+
+    .container .fifth .lineig .fix {
+        padding-top: 1.2rem;
+    }
+
+
+
+    .container .sixth {
+     margin: 5rem 3rem;
+    }
+
+    .container .sixth ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .seventh p {
+        margin-inline: 26rem;
+    }
+
+    .container .eighth {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container .eighth .footerone img {
+        margin-bottom: 3rem;
+    }
+
+    .container .eighth .footertwo .topline {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        text-align: left;
+    }
+
+    .container .eighth .footertwo .topline .two {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .container .eighth .footertwo .topline .four {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+
+}
